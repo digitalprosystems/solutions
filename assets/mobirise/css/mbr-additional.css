@@ -825,7 +825,7 @@ section.lazy-placeholder:after {
   color: #bca800;
 }
 .cid-rsDBhJCIUM {
-  padding-top: 45px;
+  padding-top: 60px;
   padding-bottom: 15px;
   background-image: url("../../../assets/images/pedestrians-400811-1920-1920x1271.jpg");
 }
@@ -909,6 +909,40 @@ section.lazy-placeholder:after {
 .cid-rsDBhJCIUM .user_desk {
   color: #efefef;
 }
+.cid-rsEqS8bdPd {
+  overflow: hidden !important;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: linear-gradient(to right, #bca800 0%, #bca800 30%, #000000 30%, #000000 100%);
+}
+.cid-rsEqS8bdPd .animated-element {
+  color: #efefef;
+}
+.cid-rsEqS8bdPd .img-block {
+  -webkit-align-self: center;
+  align-self: center;
+}
+.cid-rsEqS8bdPd .mbr-section-subtitle {
+  color: #efefef;
+}
+@media (min-width: 992px) {
+  .cid-rsEqS8bdPd .img-block {
+    padding-right: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .cid-rsEqS8bdPd .mbr-figure {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .cid-rsEqS8bdPd {
+    background: #000000;
+  }
+  .cid-rsEqS8bdPd .img-block {
+    padding-bottom: 2rem;
+  }
+}
 .cid-rsyMTTWQ1R {
   padding-top: 0px;
   padding-bottom: 15px;
@@ -984,40 +1018,6 @@ section.lazy-placeholder:after {
 .cid-rsEfz3q71o .mbr-section-title {
   text-align: center;
   color: #ffe100;
-}
-.cid-rsEqS8bdPd {
-  overflow: hidden !important;
-  padding-top: 120px;
-  padding-bottom: 105px;
-  background: linear-gradient(to right, #ec6963 0%, #ec6963 30%, #66458e 30%, #66458e 100%);
-}
-.cid-rsEqS8bdPd .animated-element {
-  color: #efefef;
-}
-.cid-rsEqS8bdPd .img-block {
-  -webkit-align-self: center;
-  align-self: center;
-}
-.cid-rsEqS8bdPd .mbr-section-subtitle {
-  color: #efefef;
-}
-@media (min-width: 992px) {
-  .cid-rsEqS8bdPd .img-block {
-    padding-right: 2rem;
-  }
-}
-@media (max-width: 767px) {
-  .cid-rsEqS8bdPd .mbr-figure {
-    margin-top: 1rem;
-  }
-}
-@media (max-width: 768px) {
-  .cid-rsEqS8bdPd {
-    background: #66458e;
-  }
-  .cid-rsEqS8bdPd .img-block {
-    padding-bottom: 2rem;
-  }
 }
 .cid-rsP13C0wd8 {
   padding-top: 45px;

@@ -3378,6 +3378,30 @@ section.lazy-placeholder:after {
     text-align: center !important;
   }
 }
+.cid-rTJChe4RrI {
+  padding-top: 45px;
+  padding-bottom: 0px;
+  background-color: #000000;
+}
+@media (max-width: 768px) {
+  .cid-rTJChe4RrI .mbr-text,
+  .cid-rTJChe4RrI .mbr-section-subtitle,
+  .cid-rTJChe4RrI .mbr-section-title {
+    text-align: center !important;
+  }
+}
+.cid-rTJChe4RrI .mbr-text {
+  text-align: center;
+  color: #ffffff;
+}
+.cid-rTJChe4RrI .mbr-section-subtitle {
+  text-align: center;
+  color: #3eccff;
+}
+.cid-rTJChe4RrI .mbr-section-title {
+  text-align: center;
+  color: #ffe100;
+}
 .cid-rTJhcNKqMh {
   padding-top: 15px;
   padding-bottom: 15px;

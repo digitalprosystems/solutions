@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Digital Pro Systems",
-    "currentPage": "index.html",
+    "currentPage": "page3.html",
     "theme": {
       "name": "commercem4",
       "title": "CommerceM4",
@@ -29,13 +29,13 @@
         "isScrollToTopButton": false
       },
       "additionalSetColors": [
+        "#3eccff",
         "#9bd8f7",
         "#23c494",
         "#ffb000",
         "#ffea4b",
         "#bca800",
-        "#043a00",
-        "#a90000"
+        "#043a00"
       ]
     },
     "path": "@PROJECT_PATH@",
@@ -2722,7 +2722,7 @@
             },
             ".mbr-section-subtitle": {
               "text-align": "center",
-              "color": "#92b5d5"
+              "color": "#3eccff"
             },
             ".mbr-section-title": {
               "text-align": "center",

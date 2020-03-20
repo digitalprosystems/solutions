@@ -2100,9 +2100,67 @@ section.lazy-placeholder:after {
 .cid-rTISc4H7Zc .mbr-section-subtitle {
   color: #ffea4b;
 }
-.cid-rTIQoDyuKV {
+.cid-rTJyii31JN {
   padding-top: 45px;
   padding-bottom: 0px;
+  background-color: #000000;
+}
+@media (max-width: 768px) {
+  .cid-rTJyii31JN .mbr-text,
+  .cid-rTJyii31JN .mbr-section-subtitle,
+  .cid-rTJyii31JN .mbr-section-title {
+    text-align: center !important;
+  }
+}
+.cid-rTJyii31JN .mbr-text {
+  text-align: center;
+  color: #ffffff;
+}
+.cid-rTJyii31JN .mbr-section-subtitle {
+  text-align: left;
+  color: #ffea4b;
+}
+.cid-rTJyii31JN .mbr-section-title {
+  text-align: center;
+  color: #ffe100;
+}
+.cid-rTJyjHTRgf {
+  padding-top: 0px;
+  padding-bottom: 15px;
+  background-color: #000000;
+}
+@media (min-width: 992px) {
+  .cid-rTJyjHTRgf .mbr-figure {
+    padding-left: 2rem;
+  }
+}
+@media (max-width: 992px) {
+  .cid-rTJyjHTRgf .mbr-figure {
+    padding-top: 1rem;
+  }
+}
+.cid-rTJyjHTRgf .mbr-text {
+  color: #ffffff;
+  text-align: left;
+}
+.cid-rTJyvAiyTT {
+  padding-top: 0px;
+  padding-bottom: 30px;
+  background-color: #000000;
+}
+.cid-rTJyvAiyTT .mbr-section-subtitle {
+  color: #cccccc;
+}
+@media (max-width: 767px) {
+  .cid-rTJyvAiyTT .mbr-section-btn,
+  .cid-rTJyvAiyTT .mbr-section-subtitle,
+  .cid-rTJyvAiyTT .mbr-section-title {
+    text-align: center !important;
+  }
+}
+.cid-rTIQoDyuKV {
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color: #000000;
 }
 @media (max-width: 768px) {
@@ -2118,30 +2176,11 @@ section.lazy-placeholder:after {
 }
 .cid-rTIQoDyuKV .mbr-section-subtitle {
   text-align: center;
-  color: #ffea4b;
+  color: #ffffff;
 }
 .cid-rTIQoDyuKV .mbr-section-title {
   text-align: center;
   color: #ffe100;
-}
-.cid-rTIY5yo8te {
-  padding-top: 0px;
-  padding-bottom: 15px;
-  background-color: #000000;
-}
-@media (min-width: 992px) {
-  .cid-rTIY5yo8te .mbr-figure {
-    padding-left: 2rem;
-  }
-}
-@media (max-width: 992px) {
-  .cid-rTIY5yo8te .mbr-figure {
-    padding-top: 1rem;
-  }
-}
-.cid-rTIY5yo8te .mbr-text {
-  color: #ffffff;
-  text-align: right;
 }
 .cid-rTIQoSqssv {
   padding-top: 15px;

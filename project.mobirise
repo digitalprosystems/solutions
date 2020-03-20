@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Digital Pro Systems",
-    "currentPage": "page4.html",
+    "currentPage": "page2.html",
     "theme": {
       "name": "commercem4",
       "title": "CommerceM4",
@@ -1732,7 +1732,7 @@
     "page2.html": {
       "settings": {
         "title": "eCommerce Solutions",
-        "meta_descr": "PEOPLE DON'T BUY PRODUCTS. It's All About Solutions. Find Yours. Next Generation eCommerce For Professionals \n\n",
+        "meta_descr": "Solutions That Really Work. Low Maintenance. User Friendly And Economical.\n\n",
         "header_custom": "",
         "footer_custom": "",
         "html_before": "",

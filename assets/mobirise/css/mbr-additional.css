@@ -4388,28 +4388,6 @@ section.lazy-placeholder:after {
   text-align: center;
   color: #ffe100;
 }
-.cid-rTK2hvnhYj {
-  background: #ffffff;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-.cid-rTK2hvnhYj .container-fluid {
-  padding: 0 3rem;
-}
-.cid-rTK2hvnhYj .image-block {
-  margin: auto;
-}
-.cid-rTK2hvnhYj .image-block img {
-  width: 100%;
-}
-@media (max-width: 767px) {
-  .cid-rTK2hvnhYj .container-fluid {
-    padding: 0 1rem;
-  }
-  .cid-rTK2hvnhYj .image-block {
-    width: 100% !important;
-  }
-}
 .cid-rTK2sDr9dW {
   padding-top: 45px;
   padding-bottom: 0px;

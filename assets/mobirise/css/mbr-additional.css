@@ -710,6 +710,57 @@ section.lazy-placeholder:after {
   text-align: center;
   color: #ffe100;
 }
+.cid-rTMAiSTf5a {
+  padding-top: 30px;
+  padding-bottom: 0px;
+  background-color: #ffffff;
+}
+.cid-rTMAiSTf5a .card {
+  display: block;
+  position: relative;
+}
+.cid-rTMAiSTf5a .card .card-wrapper {
+  background: #fff39b;
+  height: 1%;
+}
+.cid-rTMAiSTf5a .card .card-wrapper .card-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+  z-index: 1;
+}
+.cid-rTMAiSTf5a .card .card-wrapper .card-img img {
+  transition: all .5s;
+}
+.cid-rTMAiSTf5a .card .card-wrapper .card-img .img-text {
+  position: absolute;
+  padding: .6rem;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 1;
+  border-radius: 100px;
+  background-color: #66458e;
+}
+.cid-rTMAiSTf5a .card .card-wrapper .card-img .img-text span {
+  display: block;
+}
+.cid-rTMAiSTf5a .card .card-wrapper .card-box {
+  padding: 1.5rem;
+}
+.cid-rTMAiSTf5a .mbr-card-text {
+  color: #ffffff;
+  margin: 0;
+}
+.cid-rTMAiSTf5a .mbr-section-title {
+  text-align: center;
+}
+.cid-rTMAiSTf5a .mbr-card-text,
+.cid-rTMAiSTf5a .mbr-section-btn {
+  color: #232323;
+}
+.cid-rTMAiSTf5a .mbr-section-subtitle {
+  text-align: center;
+}
 .cid-rsDjnWZshr {
   padding-top: 45px;
   padding-bottom: 0px;

@@ -41,7 +41,7 @@
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.10.1",
     "siteFonts": [],
-    "uniqCompNum": 109,
+    "uniqCompNum": 119,
     "versionPublish": "4.10.8",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/digital-pro-systems-logo-100x70-2.png",
@@ -6830,11 +6830,417 @@
             }
           },
           "_name": "image1",
-          "_customHTML": "<section group=\"Images & Videos\" class=\"image1\">\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <mbr-parameters>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\" condition=\"fullWidth == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\" condition=\"fullWidth == false\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Width\" name=\"contentWidth\" min=\"20\" max=\"100\" value=\"50\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"checkbox\" title=\"Show Caption\" name=\"showCaption\" checked>\n        <input type=\"color\" title=\"Caption Background\" name=\"cpBg\" value=\"#66458e\" condition=\"showCaption\">\n        <input type=\"range\" inline title=\"Caption Opacity\" name=\"captionOpacity\" min=\"0\" max=\"1\" value=\"0\" step=\"0.1\">\n        <input type=\"checkbox\" title=\"Caption On Top/Bottom\" name=\"captionBottom\" condition=\"showCaption\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\" condition=\"!fullWidth\">\n    </mbr-parameters>\n    <!-- End block parameters -->\n    <figure class=\"mbr-figure\" mbr-class=\"{'container-fluid':fullWidth == false}\">\n        <div class=\"image-block\" mbr-style=\"{'width':contentWidth+'%'}\">\n            <img src=\"@PROJECT_PATH@/assets/images/web-design-prices-factors2-864x300.png\" alt title>\n            <div class=\"img-caption\" mbr-if=\"showCaption\">\n                <div class=\"mbr-overlay\" mbr-style=\"{'opacity':captionOpacity, 'background-color': cpBg}\">\n                </div>\n                <p class=\"mbr-text mbr-fonts-style align-left mbr-white\" mbr-theme-style=\"display-7\">The seven most influential factors on web design costs include:\n<br>\n<br></p>\n            </div>\n        </div>\n    </figure>\n</section>",
+          "_customHTML": "<section group=\"Images & Videos\" class=\"image1\">\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <mbr-parameters>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\" condition=\"fullWidth == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\" condition=\"fullWidth == false\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Width\" name=\"contentWidth\" min=\"20\" max=\"100\" value=\"50\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"checkbox\" title=\"Show Caption\" name=\"showCaption\" checked>\n        <input type=\"color\" title=\"Caption Background\" name=\"cpBg\" value=\"#66458e\" condition=\"showCaption\">\n        <input type=\"range\" inline title=\"Caption Opacity\" name=\"captionOpacity\" min=\"0\" max=\"1\" value=\"0\" step=\"0.1\">\n        <input type=\"checkbox\" title=\"Caption On Top/Bottom\" name=\"captionBottom\" condition=\"showCaption\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\" condition=\"!fullWidth\">\n    </mbr-parameters>\n    <!-- End block parameters -->\n    <figure class=\"mbr-figure\" mbr-class=\"{'container-fluid':fullWidth == false}\">\n        <div class=\"image-block\" mbr-style=\"{'width':contentWidth+'%'}\">\n            <img src=\"@PROJECT_PATH@/assets/images/web-design-prices-factors2-864x300.png\" alt title>\n            <div class=\"img-caption\" mbr-if=\"showCaption\">\n                <div class=\"mbr-overlay\" mbr-style=\"{'opacity':captionOpacity, 'background-color': cpBg}\">\n                </div>\n                <p class=\"mbr-text mbr-fonts-style align-left mbr-white\" mbr-theme-style=\"display-7\">The most influential factors on web design costs include:\n<br>\n<br></p>\n            </div>\n        </div>\n    </figure>\n</section>",
           "_anchor": "image1-30",
           "_isUserblock": true,
           "_sourceTheme": "commercem4",
           "_cid": "rUlR73zkBX",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-text,.mbr-section-subtitle": {
+              "color": "#767676"
+            },
+            ".card-title": {
+              "color": "#66458e"
+            },
+            ".card": {
+              ".card-img span": {
+                "color": "@iconsColor",
+                "font-size": "60px",
+                "background": "linear-gradient(45deg, @iconsColor, @iconsColor2)",
+                "-webkit-background-clip": "text",
+                "-webkit-text-fill-color": "transparent"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".mbr-section-subtitle,.mbr-section-title": {
+                "text-align": "center !important"
+              }
+            },
+            "@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)": {
+              ".card .card-img span": {
+                "background": "none"
+              }
+            },
+            ".mbr-text": {
+              "text-align": "left"
+            },
+            ".card-title, .card-img": {
+              "text-align": "center",
+              "color": "#bca800"
+            },
+            ".mbr-section-title": {
+              "text-align": "left"
+            }
+          },
+          "_name": "features3",
+          "_customHTML": "<section class=\"features3\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\"> \n        <input type=\"checkbox\" title=\"Show Section Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Section Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Column Titles\" name=\"showTitles\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#bca800\">\n        <input type=\"color\" title=\"Icons Color2\" name=\"iconsColor2\" value=\"#bca800\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected>2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <h2 class=\"mbr-section-title align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>1. SIZE ($1000 TO $10,000)</b></h2>\n        <h3 class=\"mbr-section-subtitle display-5 align-center mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">By Design Engineered To Be The Whole Solution\n</h3>\n        <div class=\"row justify-content-center\" mbr-class=\"{'pt-3':showTitle || showSubtitle}\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-xl-3 col-lg-3':cardsAmount=='4',\n                             'col-xl-4 col-lg-4':cardsAmount=='3'}\">\n                <div class=\"card-wrap\">\n                    <div class=\"card-img pb-4 align-center\">\n                        <span mbr-icon class=\"mbr-iconfont mbri-desktop\" style=\"color: rgb(78, 132, 194); fill: rgb(78, 132, 194);\"></span>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showTitles||showText\">\n                        <h4 class=\"card-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".card-title, .card-img\">Low Prices = More Customers\n</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">The size of your website plays a significant role in web design pricing.\n<br>\n<br>If you’re looking to create a larger site, you can expect to pay more for web design services. It requires more time and work to develop, build, and launch a big website with advanced capabilities like those needed for ecommerce stores.\n<br>\n<br>In most cases, agencies define the size of your website by the number of pages. For instance, at WebFX, we have five different page ranges. <br><br>You can experiment with these using our web design price calculator.</p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-xl-3 col-lg-3':cardsAmount=='4',\n                             'col-xl-4 col-lg-4':cardsAmount=='3'}\" mbr-if=\"cardsAmount > 1\">\n                <div class=\"card-wrap\">\n                    <div class=\"card-img pb-4 align-center\">\n                        <span mbr-icon class=\"mbr-iconfont mbri-devices\" style=\"color: rgb(78, 132, 194); fill: rgb(78, 132, 194);\"></span>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showTitles||showText\">\n                        <h4 class=\"card-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".card-title, .card-img\">All eCommerce Platforms Are Created Equal\n</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">How much impact does a website’s size have on prices, though?\n<br>\n<br>It varies. A statement on the impact of a website's size on web design prices. In most cases, the cost scales off the number of pages:\n<br>\n<br>1 to 10 pages costs between $1000 to $2000\n<br>10 to 50 pages costs between $2000 to $3000\n<br>50 to 150 pages costs between $3000 to $6500\n<br>150 to 250 pages costs between $6500 to $10,000<br><br>If you require more than 250 pages, we can provide you with a custom quote.</p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-xl-3 col-lg-3':cardsAmount=='4',\n                             'col-xl-4 col-lg-4':cardsAmount=='3'}\" mbr-if=\"cardsAmount > 2\">\n                <div class=\"card-wrap\">\n                    <div class=\"card-img pb-4 align-center\">\n                        <span mbr-icon class=\"mbr-iconfont mbri-growing-chart\"></span>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showTitles||showText\">\n                        <h4 class=\"card-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".card-title, .card-img\">Measurable Organic Internet Traffic</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                            Discover traffic options that won’t break the bank, but rather fill it. Helping us understand your business objectives will facilitate the best possible strategy. The one you may call the solution.\n                        </p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-xl-3 col-lg-3':cardsAmount=='4',\n                             'col-xl-4 col-lg-4':cardsAmount=='3'}\" mbr-if=\"cardsAmount > 3\">\n                <div class=\"card-wrap\">\n                    <div class=\"card-img pb-4 align-center\">\n                        <span mbr-icon class=\"mbr-iconfont mbri-folder\"></span>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showTitles||showText\">\n                        <h4 class=\"card-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".card-title, .card-img\">Business Entity Formation</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                            Limited Liability Company, Corporation or even Sole Proprietorship. What’s it going to be? Knowing the answer involves a careful analysis of your business concept and marketing ideas. This is where we come in.\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "features3-34",
+          "_isUserblock": true,
+          "_sourceTheme": "commercem4",
+          "_cid": "rUlTRij15e",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-text,.mbr-section-subtitle": {
+              "color": "#767676"
+            },
+            ".card-title": {
+              "color": "#66458e"
+            },
+            ".card": {
+              ".card-img span": {
+                "color": "@iconsColor",
+                "font-size": "60px",
+                "background": "linear-gradient(45deg, @iconsColor, @iconsColor2)",
+                "-webkit-background-clip": "text",
+                "-webkit-text-fill-color": "transparent"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".mbr-section-subtitle,.mbr-section-title": {
+                "text-align": "center !important"
+              }
+            },
+            "@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)": {
+              ".card .card-img span": {
+                "background": "none"
+              }
+            },
+            ".mbr-text": {
+              "text-align": "left"
+            },
+            ".card-title, .card-img": {
+              "text-align": "center",
+              "color": "#bca800"
+            },
+            ".mbr-section-title": {
+              "text-align": "left"
+            }
+          },
+          "_name": "features3",
+          "_customHTML": "<section class=\"features3\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\"> \n        <input type=\"checkbox\" title=\"Show Section Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Section Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Column Titles\" name=\"showTitles\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#bca800\">\n        <input type=\"color\" title=\"Icons Color2\" name=\"iconsColor2\" value=\"#bca800\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected>2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <h2 class=\"mbr-section-title align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>2. COPYWRITING ($60 TO $300 PER PAGE)</b></h2>\n        <h3 class=\"mbr-section-subtitle display-5 align-center mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">By Design Engineered To Be The Whole Solution\n</h3>\n        <div class=\"row justify-content-center\" mbr-class=\"{'pt-3':showTitle || showSubtitle}\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-xl-3 col-lg-3':cardsAmount=='4',\n                             'col-xl-4 col-lg-4':cardsAmount=='3'}\">\n                <div class=\"card-wrap\">\n                    <div class=\"card-img pb-4 align-center\">\n                        <span mbr-icon class=\"mbr-iconfont mbri-edit2\" style=\"color: rgb(78, 132, 194); fill: rgb(78, 132, 194);\"></span>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showTitles||showText\">\n                        <h4 class=\"card-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".card-title, .card-img\">Low Prices = More Customers\n</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">Another factor that affects your web design costs? Copywriting.\n<br>\n<br>Depending on your digital marketing strategy, as well as budget, your company may use your agency’s copywriting services for your webpages. If you do, it’s wise to partner with a full-service digital marketing agency like WebFX that offers more than just web design services.\n<br>\n<br>A full-service agency can provide optimized copy that captures your brand, product features, and unique selling points. What is optimized copy, though? It’s content that targets keywords relevant to your business and target audience.\n<br>\n<br>For example, if someone wants to purchase slippers, they may search for, “women’s slippers.” This search example features the keyword, “women’s slippers,” which you can target on your product page for Women’s Slippers.\n<br>\n<br>If you’re unfamiliar with optimizing content for search engine optimization (SEO) — like in the previous example — then it’s worth paying for site copywriting. With this service, you can maximize the performance of your website, as well as your ROI.</p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-xl-3 col-lg-3':cardsAmount=='4',\n                             'col-xl-4 col-lg-4':cardsAmount=='3'}\" mbr-if=\"cardsAmount > 1\">\n                <div class=\"card-wrap\">\n                    <div class=\"card-img pb-4 align-center\">\n                        <span mbr-icon class=\"mbr-iconfont mbri-change-style\" style=\"color: rgb(78, 132, 194); fill: rgb(78, 132, 194);\"></span>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showTitles||showText\">\n                        <h4 class=\"card-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".card-title, .card-img\">All eCommerce Platforms Are Created Equal\n</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">How does copywriting impact your web design pricing, though?\n<br>\n<br>While the cost of copywriting varies, you can expect to pay around $300 per webpage. If you’re an ecommerce store, product pages generally cost around $60 per page — ecommerce product pages have a lower price due to their shorter word count.\n<br>\n<br>A statement on the average cost of copywriting for web design prices\n<br>As a part of our web design services, we offer copywriting at a discounted rate. <br><br>For example, for 10 to 25 pages, we charge $1500 to $3750. If you need 25 pages, that translates to $3750 in savings, which your company can invest elsewhere.</p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-xl-3 col-lg-3':cardsAmount=='4',\n                             'col-xl-4 col-lg-4':cardsAmount=='3'}\" mbr-if=\"cardsAmount > 2\">\n                <div class=\"card-wrap\">\n                    <div class=\"card-img pb-4 align-center\">\n                        <span mbr-icon class=\"mbr-iconfont mbri-growing-chart\"></span>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showTitles||showText\">\n                        <h4 class=\"card-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".card-title, .card-img\">Measurable Organic Internet Traffic</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                            Discover traffic options that won’t break the bank, but rather fill it. Helping us understand your business objectives will facilitate the best possible strategy. The one you may call the solution.\n                        </p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-xl-3 col-lg-3':cardsAmount=='4',\n                             'col-xl-4 col-lg-4':cardsAmount=='3'}\" mbr-if=\"cardsAmount > 3\">\n                <div class=\"card-wrap\">\n                    <div class=\"card-img pb-4 align-center\">\n                        <span mbr-icon class=\"mbr-iconfont mbri-folder\"></span>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showTitles||showText\">\n                        <h4 class=\"card-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".card-title, .card-img\">Business Entity Formation</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                            Limited Liability Company, Corporation or even Sole Proprietorship. What’s it going to be? Knowing the answer involves a careful analysis of your business concept and marketing ideas. This is where we come in.\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "features3-35",
+          "_isUserblock": true,
+          "_sourceTheme": "commercem4",
+          "_cid": "rUlVf1oeoD",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-text,.mbr-section-subtitle": {
+              "color": "#767676"
+            },
+            ".card-title": {
+              "color": "#66458e"
+            },
+            ".card": {
+              ".card-img span": {
+                "color": "@iconsColor",
+                "font-size": "60px",
+                "background": "linear-gradient(45deg, @iconsColor, @iconsColor2)",
+                "-webkit-background-clip": "text",
+                "-webkit-text-fill-color": "transparent"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".mbr-section-subtitle,.mbr-section-title": {
+                "text-align": "center !important"
+              }
+            },
+            "@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)": {
+              ".card .card-img span": {
+                "background": "none"
+              }
+            },
+            ".mbr-text": {
+              "text-align": "left"
+            },
+            ".card-title, .card-img": {
+              "text-align": "center",
+              "color": "#bca800"
+            },
+            ".mbr-section-title": {
+              "text-align": "left"
+            }
+          },
+          "_name": "features3",
+          "_customHTML": "<section class=\"features3\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\"> \n        <input type=\"checkbox\" title=\"Show Section Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Section Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Column Titles\" name=\"showTitles\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#bca800\">\n        <input type=\"color\" title=\"Icons Color2\" name=\"iconsColor2\" value=\"#bca800\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected>2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <h2 class=\"mbr-section-title align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>3. STYLE ($2000 TO $15,000)</b></h2>\n        <h3 class=\"mbr-section-subtitle display-5 align-center mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">By Design Engineered To Be The Whole Solution\n</h3>\n        <div class=\"row justify-content-center\" mbr-class=\"{'pt-3':showTitle || showSubtitle}\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-xl-3 col-lg-3':cardsAmount=='4',\n                             'col-xl-4 col-lg-4':cardsAmount=='3'}\">\n                <div class=\"card-wrap\">\n                    <div class=\"card-img pb-4 align-center\">\n                        <span mbr-icon class=\"mbr-iconfont mbri-website-theme\" style=\"color: rgb(78, 132, 194); fill: rgb(78, 132, 194);\"></span>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showTitles||showText\">\n                        <h4 class=\"card-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".card-title, .card-img\">Low Prices = More Customers\n</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">The style of websites varies a lot, which is why your preferred site style impacts your web design pricing.\n<br>\n<br>For example, if you’re a luxury jewelry company, you’re probably looking to create a high-end website that conveys not only your brand but also your product or service quality. In comparison, a roofing contractor’s web design may feature a more laidback, yet professional design with a focus on trust.\n<br>\n<br>In most cases, that tends to cost more due to the amount of design and labor required.\n<br>\n<br>No matter what sort of style you’re looking for, from simple to high-end, it’s critical that your agency creates a website that captures your brand, as well as provides an intuitive and seamless experience for shoppers.</p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-xl-3 col-lg-3':cardsAmount=='4',\n                             'col-xl-4 col-lg-4':cardsAmount=='3'}\" mbr-if=\"cardsAmount > 1\">\n                <div class=\"card-wrap\">\n                    <div class=\"card-img pb-4 align-center\">\n                        <span mbr-icon class=\"mbr-iconfont mbri-sites\" style=\"color: rgb(78, 132, 194); fill: rgb(78, 132, 194);\"></span>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showTitles||showText\">\n                        <h4 class=\"card-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".card-title, .card-img\">All eCommerce Platforms Are Created Equal\n</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">How much does web design cost when it comes to style, though?\n<br>\n<br>It depends on the agency.\n<br>\n<br>A statement on the impact of a website's style on web design costs\n<br>For example, our prices for a specific web design style range from $2000 to $15,000 — we also allow you to select zero styling for an attractive, yet simple design. While WebFX encourages you to customize your pricing, other agencies include the cost of styling your site in their base prices.\n<br>\n<br>In some cases, that can result in higher web design costs.\n<br>\n<br>That’s why it’s worthwhile for your team to request quotes from several different agencies. By taking this proactive step, you can partner with the best agency for your company without exceeding your budget.</p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-xl-3 col-lg-3':cardsAmount=='4',\n                             'col-xl-4 col-lg-4':cardsAmount=='3'}\" mbr-if=\"cardsAmount > 2\">\n                <div class=\"card-wrap\">\n                    <div class=\"card-img pb-4 align-center\">\n                        <span mbr-icon class=\"mbr-iconfont mbri-growing-chart\"></span>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showTitles||showText\">\n                        <h4 class=\"card-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".card-title, .card-img\">Measurable Organic Internet Traffic</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                            Discover traffic options that won’t break the bank, but rather fill it. Helping us understand your business objectives will facilitate the best possible strategy. The one you may call the solution.\n                        </p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-xl-3 col-lg-3':cardsAmount=='4',\n                             'col-xl-4 col-lg-4':cardsAmount=='3'}\" mbr-if=\"cardsAmount > 3\">\n                <div class=\"card-wrap\">\n                    <div class=\"card-img pb-4 align-center\">\n                        <span mbr-icon class=\"mbr-iconfont mbri-folder\"></span>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showTitles||showText\">\n                        <h4 class=\"card-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".card-title, .card-img\">Business Entity Formation</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                            Limited Liability Company, Corporation or even Sole Proprietorship. What’s it going to be? Knowing the answer involves a careful analysis of your business concept and marketing ideas. This is where we come in.\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "features3-36",
+          "_isUserblock": true,
+          "_sourceTheme": "commercem4",
+          "_cid": "rUlVRBsy7y",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-text,.mbr-section-subtitle": {
+              "color": "#767676"
+            },
+            ".card-title": {
+              "color": "#66458e"
+            },
+            ".card": {
+              ".card-img span": {
+                "color": "@iconsColor",
+                "font-size": "60px",
+                "background": "linear-gradient(45deg, @iconsColor, @iconsColor2)",
+                "-webkit-background-clip": "text",
+                "-webkit-text-fill-color": "transparent"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".mbr-section-subtitle,.mbr-section-title": {
+                "text-align": "center !important"
+              }
+            },
+            "@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)": {
+              ".card .card-img span": {
+                "background": "none"
+              }
+            },
+            ".mbr-text": {
+              "text-align": "left"
+            },
+            ".card-title, .card-img": {
+              "text-align": "center",
+              "color": "#bca800"
+            },
+            ".mbr-section-title": {
+              "text-align": "left"
+            }
+          },
+          "_name": "features3",
+          "_customHTML": "<section class=\"features3\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\"> \n        <input type=\"checkbox\" title=\"Show Section Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Section Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Column Titles\" name=\"showTitles\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#bca800\">\n        <input type=\"color\" title=\"Icons Color2\" name=\"iconsColor2\" value=\"#bca800\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected>2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <h2 class=\"mbr-section-title align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>4. SEO ($2000 TO $10,000)</b></h2>\n        <h3 class=\"mbr-section-subtitle display-5 align-center mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">By Design Engineered To Be The Whole Solution\n</h3>\n        <div class=\"row justify-content-center\" mbr-class=\"{'pt-3':showTitle || showSubtitle}\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-xl-3 col-lg-3':cardsAmount=='4',\n                             'col-xl-4 col-lg-4':cardsAmount=='3'}\">\n                <div class=\"card-wrap\">\n                    <div class=\"card-img pb-4 align-center\">\n                        <span mbr-icon class=\"mbr-iconfont mbri-desktop\" style=\"color: rgb(78, 132, 194); fill: rgb(78, 132, 194);\"></span>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showTitles||showText\">\n                        <h4 class=\"card-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".card-title, .card-img\">Low Prices = More Customers\n</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">If you’re partnering with a full-service digital marketing agency for your web design, they probably offer SEO services, which you can bundle with web design. Some, like WebFX, include not only SEO but also a placement guarantee.\n<br>\n<br>What is a placement guarantee?\n<br>\n<br>It guarantees that your website will rank on the first page of search results for a designated keyword. For example, if your site appeared on the first page of search results for the keyword, “wool slippers,” that would meet your placement guarantee.\n<br>\n<br>In most cases, agencies offer a placement guarantee for a select number of keywords. They also limit the placement guarantee to keywords with a certain amount of search results. For instance, the placement guarantee may only apply to keywords that generate one million search results.\n<br>\n<br>That doesn’t mean these keywords aren’t as valuable — they are and can make a tremendous difference in your company’s weekly sales and leads. Plus, they’re easier to rank for in search results. That can help your web design budget do more for your business in both the short- and long-term.</p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-xl-3 col-lg-3':cardsAmount=='4',\n                             'col-xl-4 col-lg-4':cardsAmount=='3'}\" mbr-if=\"cardsAmount > 1\">\n                <div class=\"card-wrap\">\n                    <div class=\"card-img pb-4 align-center\">\n                        <span mbr-icon class=\"mbr-iconfont mbri-devices\" style=\"color: rgb(78, 132, 194); fill: rgb(78, 132, 194);\"></span>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showTitles||showText\">\n                        <h4 class=\"card-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".card-title, .card-img\">All eCommerce Platforms Are Created Equal\n</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">What does SEO placement guarantee cost, though?\n<br>\n<br>Bundling web design with SEO placement guarantee can increase your web design costs by $2000 to $10,000. The price for this service generally scales off the number of keywords targeted. For example, it costs more to optimize and rank for 150 keywords than for 30 keywords.\n<br>\n<br>A statement on the impact of SEO on the price of web design\n<br>If you want to make the most of your web design investment, then it’s a smart choice to add SEO placement guarantee services. Rank on the first page of search results, and you can increase your conversions and revenue.\n<br>\n<br>Why? You rank for keywords relevant to your target audience and business. Plus, 75 percent of users stick to the first page of search results. They don’t bother clicking on page two, three, or four, which means your business needs to appear on page one to succeed.</p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-xl-3 col-lg-3':cardsAmount=='4',\n                             'col-xl-4 col-lg-4':cardsAmount=='3'}\" mbr-if=\"cardsAmount > 2\">\n                <div class=\"card-wrap\">\n                    <div class=\"card-img pb-4 align-center\">\n                        <span mbr-icon class=\"mbr-iconfont mbri-growing-chart\"></span>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showTitles||showText\">\n                        <h4 class=\"card-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".card-title, .card-img\">Measurable Organic Internet Traffic</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                            Discover traffic options that won’t break the bank, but rather fill it. Helping us understand your business objectives will facilitate the best possible strategy. The one you may call the solution.\n                        </p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-xl-3 col-lg-3':cardsAmount=='4',\n                             'col-xl-4 col-lg-4':cardsAmount=='3'}\" mbr-if=\"cardsAmount > 3\">\n                <div class=\"card-wrap\">\n                    <div class=\"card-img pb-4 align-center\">\n                        <span mbr-icon class=\"mbr-iconfont mbri-folder\"></span>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showTitles||showText\">\n                        <h4 class=\"card-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".card-title, .card-img\">Business Entity Formation</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                            Limited Liability Company, Corporation or even Sole Proprietorship. What’s it going to be? Knowing the answer involves a careful analysis of your business concept and marketing ideas. This is where we come in.\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "features3-37",
+          "_isUserblock": true,
+          "_sourceTheme": "commercem4",
+          "_cid": "rUlWo46gRr",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-text,.mbr-section-subtitle": {
+              "color": "#767676"
+            },
+            ".card-title": {
+              "color": "#66458e"
+            },
+            ".card": {
+              ".card-img span": {
+                "color": "@iconsColor",
+                "font-size": "60px",
+                "background": "linear-gradient(45deg, @iconsColor, @iconsColor2)",
+                "-webkit-background-clip": "text",
+                "-webkit-text-fill-color": "transparent"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".mbr-section-subtitle,.mbr-section-title": {
+                "text-align": "center !important"
+              }
+            },
+            "@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)": {
+              ".card .card-img span": {
+                "background": "none"
+              }
+            },
+            ".mbr-text": {
+              "text-align": "left"
+            },
+            ".card-title, .card-img": {
+              "text-align": "center",
+              "color": "#bca800"
+            },
+            ".mbr-section-title": {
+              "text-align": "left"
+            }
+          },
+          "_name": "features3",
+          "_customHTML": "<section class=\"features3\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\"> \n        <input type=\"checkbox\" title=\"Show Section Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Section Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Column Titles\" name=\"showTitles\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked=\"\">\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#bca800\">\n        <input type=\"color\" title=\"Icons Color2\" name=\"iconsColor2\" value=\"#bca800\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected=\"\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax=\"\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected=\"\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked=\"\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <h2 class=\"mbr-section-title align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>1. SIZE ($1000 TO $10,000)</b></h2>\n        <h3 class=\"mbr-section-subtitle display-5 align-center mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">By Design Engineered To Be The Whole Solution\n</h3>\n        <div class=\"row justify-content-center\" mbr-class=\"{'pt-3':showTitle || showSubtitle}\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-xl-3 col-lg-3':cardsAmount=='4',\n                             'col-xl-4 col-lg-4':cardsAmount=='3'}\">\n                <div class=\"card-wrap\">\n                    <div class=\"card-img pb-4 align-center\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont mbri-desktop\" style=\"color: rgb(78, 132, 194); fill: rgb(78, 132, 194);\"></span>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showTitles||showText\">\n                        <h4 class=\"card-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".card-title, .card-img\">Low Prices = More Customers\n</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">The size of your website plays a significant role in web design pricing.\n<br>\n<br>If you’re looking to create a larger site, you can expect to pay more for web design services. It requires more time and work to develop, build, and launch a big website with advanced capabilities like those needed for ecommerce stores.\n<br>\n<br>In most cases, agencies define the size of your website by the number of pages. For instance, at WebFX, we have five different page ranges. <br><br>You can experiment with these using our web design price calculator.</p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-xl-3 col-lg-3':cardsAmount=='4',\n                             'col-xl-4 col-lg-4':cardsAmount=='3'}\" mbr-if=\"cardsAmount > 1\">\n                <div class=\"card-wrap\">\n                    <div class=\"card-img pb-4 align-center\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont mbri-devices\" style=\"color: rgb(78, 132, 194); fill: rgb(78, 132, 194);\"></span>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showTitles||showText\">\n                        <h4 class=\"card-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".card-title, .card-img\">All eCommerce Platforms Are Created Equal\n</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">How much impact does a website’s size have on prices, though?\n<br>\n<br>It varies. A statement on the impact of a website's size on web design prices. In most cases, the cost scales off the number of pages:\n<br>\n<br>1 to 10 pages costs between $1000 to $2000\n<br>10 to 50 pages costs between $2000 to $3000\n<br>50 to 150 pages costs between $3000 to $6500\n<br>150 to 250 pages costs between $6500 to $10,000<br><br>If you require more than 250 pages, we can provide you with a custom quote.</p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-xl-3 col-lg-3':cardsAmount=='4',\n                             'col-xl-4 col-lg-4':cardsAmount=='3'}\" mbr-if=\"cardsAmount > 2\">\n                <div class=\"card-wrap\">\n                    <div class=\"card-img pb-4 align-center\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont mbri-growing-chart\"></span>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showTitles||showText\">\n                        <h4 class=\"card-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".card-title, .card-img\">Measurable Organic Internet Traffic</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                            Discover traffic options that won’t break the bank, but rather fill it. Helping us understand your business objectives will facilitate the best possible strategy. The one you may call the solution.\n                        </p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-xl-3 col-lg-3':cardsAmount=='4',\n                             'col-xl-4 col-lg-4':cardsAmount=='3'}\" mbr-if=\"cardsAmount > 3\">\n                <div class=\"card-wrap\">\n                    <div class=\"card-img pb-4 align-center\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont mbri-folder\"></span>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showTitles||showText\">\n                        <h4 class=\"card-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".card-title, .card-img\">Business Entity Formation</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                            Limited Liability Company, Corporation or even Sole Proprietorship. What’s it going to be? Knowing the answer involves a careful analysis of your business concept and marketing ideas. This is where we come in.\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "features3-38",
+          "_isUserblock": true,
+          "_sourceTheme": "commercem4",
+          "_cid": "rUlWr12rSi",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-text,.mbr-section-subtitle": {
+              "color": "#767676"
+            },
+            ".card-title": {
+              "color": "#66458e"
+            },
+            ".card": {
+              ".card-img span": {
+                "color": "@iconsColor",
+                "font-size": "60px",
+                "background": "linear-gradient(45deg, @iconsColor, @iconsColor2)",
+                "-webkit-background-clip": "text",
+                "-webkit-text-fill-color": "transparent"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".mbr-section-subtitle,.mbr-section-title": {
+                "text-align": "center !important"
+              }
+            },
+            "@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)": {
+              ".card .card-img span": {
+                "background": "none"
+              }
+            },
+            ".mbr-text": {
+              "text-align": "left"
+            },
+            ".card-title, .card-img": {
+              "text-align": "center",
+              "color": "#bca800"
+            },
+            ".mbr-section-title": {
+              "text-align": "left"
+            }
+          },
+          "_name": "features3",
+          "_customHTML": "<section class=\"features3\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\"> \n        <input type=\"checkbox\" title=\"Show Section Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Section Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Column Titles\" name=\"showTitles\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked=\"\">\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#bca800\">\n        <input type=\"color\" title=\"Icons Color2\" name=\"iconsColor2\" value=\"#bca800\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected=\"\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax=\"\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected=\"\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked=\"\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <h2 class=\"mbr-section-title align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>1. SIZE ($1000 TO $10,000)</b></h2>\n        <h3 class=\"mbr-section-subtitle display-5 align-center mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">By Design Engineered To Be The Whole Solution\n</h3>\n        <div class=\"row justify-content-center\" mbr-class=\"{'pt-3':showTitle || showSubtitle}\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-xl-3 col-lg-3':cardsAmount=='4',\n                             'col-xl-4 col-lg-4':cardsAmount=='3'}\">\n                <div class=\"card-wrap\">\n                    <div class=\"card-img pb-4 align-center\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont mbri-desktop\" style=\"color: rgb(78, 132, 194); fill: rgb(78, 132, 194);\"></span>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showTitles||showText\">\n                        <h4 class=\"card-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".card-title, .card-img\">Low Prices = More Customers\n</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">The size of your website plays a significant role in web design pricing.\n<br>\n<br>If you’re looking to create a larger site, you can expect to pay more for web design services. It requires more time and work to develop, build, and launch a big website with advanced capabilities like those needed for ecommerce stores.\n<br>\n<br>In most cases, agencies define the size of your website by the number of pages. For instance, at WebFX, we have five different page ranges. <br><br>You can experiment with these using our web design price calculator.</p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-xl-3 col-lg-3':cardsAmount=='4',\n                             'col-xl-4 col-lg-4':cardsAmount=='3'}\" mbr-if=\"cardsAmount > 1\">\n                <div class=\"card-wrap\">\n                    <div class=\"card-img pb-4 align-center\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont mbri-devices\" style=\"color: rgb(78, 132, 194); fill: rgb(78, 132, 194);\"></span>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showTitles||showText\">\n                        <h4 class=\"card-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".card-title, .card-img\">All eCommerce Platforms Are Created Equal\n</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">How much impact does a website’s size have on prices, though?\n<br>\n<br>It varies. A statement on the impact of a website's size on web design prices. In most cases, the cost scales off the number of pages:\n<br>\n<br>1 to 10 pages costs between $1000 to $2000\n<br>10 to 50 pages costs between $2000 to $3000\n<br>50 to 150 pages costs between $3000 to $6500\n<br>150 to 250 pages costs between $6500 to $10,000<br><br>If you require more than 250 pages, we can provide you with a custom quote.</p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-xl-3 col-lg-3':cardsAmount=='4',\n                             'col-xl-4 col-lg-4':cardsAmount=='3'}\" mbr-if=\"cardsAmount > 2\">\n                <div class=\"card-wrap\">\n                    <div class=\"card-img pb-4 align-center\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont mbri-growing-chart\"></span>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showTitles||showText\">\n                        <h4 class=\"card-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".card-title, .card-img\">Measurable Organic Internet Traffic</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                            Discover traffic options that won’t break the bank, but rather fill it. Helping us understand your business objectives will facilitate the best possible strategy. The one you may call the solution.\n                        </p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-xl-3 col-lg-3':cardsAmount=='4',\n                             'col-xl-4 col-lg-4':cardsAmount=='3'}\" mbr-if=\"cardsAmount > 3\">\n                <div class=\"card-wrap\">\n                    <div class=\"card-img pb-4 align-center\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont mbri-folder\"></span>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showTitles||showText\">\n                        <h4 class=\"card-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".card-title, .card-img\">Business Entity Formation</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                            Limited Liability Company, Corporation or even Sole Proprietorship. What’s it going to be? Knowing the answer involves a careful analysis of your business concept and marketing ideas. This is where we come in.\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "features3-39",
+          "_isUserblock": true,
+          "_sourceTheme": "commercem4",
+          "_cid": "rUlWrU1swN",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-text,.mbr-section-subtitle": {
+              "color": "#767676"
+            },
+            ".card-title": {
+              "color": "#66458e"
+            },
+            ".card": {
+              ".card-img span": {
+                "color": "@iconsColor",
+                "font-size": "60px",
+                "background": "linear-gradient(45deg, @iconsColor, @iconsColor2)",
+                "-webkit-background-clip": "text",
+                "-webkit-text-fill-color": "transparent"
+              }
+            },
+            "@media (max-width: 767px)": {
+              ".mbr-section-subtitle,.mbr-section-title": {
+                "text-align": "center !important"
+              }
+            },
+            "@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)": {
+              ".card .card-img span": {
+                "background": "none"
+              }
+            },
+            ".mbr-text": {
+              "text-align": "left"
+            },
+            ".card-title, .card-img": {
+              "text-align": "center",
+              "color": "#bca800"
+            },
+            ".mbr-section-title": {
+              "text-align": "left"
+            }
+          },
+          "_name": "features3",
+          "_customHTML": "<section class=\"features3\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\"> \n        <input type=\"checkbox\" title=\"Show Section Title\" name=\"showTitle\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Section Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Column Titles\" name=\"showTitles\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked=\"\">\n        <input type=\"color\" title=\"Icons Color\" name=\"iconsColor\" value=\"#bca800\">\n        <input type=\"color\" title=\"Icons Color2\" name=\"iconsColor2\" value=\"#bca800\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected=\"\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax=\"\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected=\"\">\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked=\"\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <h2 class=\"mbr-section-title align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>1. SIZE ($1000 TO $10,000)</b></h2>\n        <h3 class=\"mbr-section-subtitle display-5 align-center mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">By Design Engineered To Be The Whole Solution\n</h3>\n        <div class=\"row justify-content-center\" mbr-class=\"{'pt-3':showTitle || showSubtitle}\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-xl-3 col-lg-3':cardsAmount=='4',\n                             'col-xl-4 col-lg-4':cardsAmount=='3'}\">\n                <div class=\"card-wrap\">\n                    <div class=\"card-img pb-4 align-center\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont mbri-desktop\" style=\"color: rgb(78, 132, 194); fill: rgb(78, 132, 194);\"></span>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showTitles||showText\">\n                        <h4 class=\"card-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".card-title, .card-img\">Low Prices = More Customers\n</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">The size of your website plays a significant role in web design pricing.\n<br>\n<br>If you’re looking to create a larger site, you can expect to pay more for web design services. It requires more time and work to develop, build, and launch a big website with advanced capabilities like those needed for ecommerce stores.\n<br>\n<br>In most cases, agencies define the size of your website by the number of pages. For instance, at WebFX, we have five different page ranges. <br><br>You can experiment with these using our web design price calculator.</p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-xl-3 col-lg-3':cardsAmount=='4',\n                             'col-xl-4 col-lg-4':cardsAmount=='3'}\" mbr-if=\"cardsAmount > 1\">\n                <div class=\"card-wrap\">\n                    <div class=\"card-img pb-4 align-center\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont mbri-devices\" style=\"color: rgb(78, 132, 194); fill: rgb(78, 132, 194);\"></span>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showTitles||showText\">\n                        <h4 class=\"card-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".card-title, .card-img\">All eCommerce Platforms Are Created Equal\n</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">How much impact does a website’s size have on prices, though?\n<br>\n<br>It varies. A statement on the impact of a website's size on web design prices. In most cases, the cost scales off the number of pages:\n<br>\n<br>1 to 10 pages costs between $1000 to $2000\n<br>10 to 50 pages costs between $2000 to $3000\n<br>50 to 150 pages costs between $3000 to $6500\n<br>150 to 250 pages costs between $6500 to $10,000<br><br>If you require more than 250 pages, we can provide you with a custom quote.</p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-xl-3 col-lg-3':cardsAmount=='4',\n                             'col-xl-4 col-lg-4':cardsAmount=='3'}\" mbr-if=\"cardsAmount > 2\">\n                <div class=\"card-wrap\">\n                    <div class=\"card-img pb-4 align-center\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont mbri-growing-chart\"></span>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showTitles||showText\">\n                        <h4 class=\"card-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".card-title, .card-img\">Measurable Organic Internet Traffic</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                            Discover traffic options that won’t break the bank, but rather fill it. Helping us understand your business objectives will facilitate the best possible strategy. The one you may call the solution.\n                        </p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-xl-3 col-lg-3':cardsAmount=='4',\n                             'col-xl-4 col-lg-4':cardsAmount=='3'}\" mbr-if=\"cardsAmount > 3\">\n                <div class=\"card-wrap\">\n                    <div class=\"card-img pb-4 align-center\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont mbri-folder\"></span>\n                    </div>\n                    <div class=\"card-box\" mbr-if=\"showTitles||showText\">\n                        <h4 class=\"card-title mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showTitles\" data-app-selector=\".card-title, .card-img\">Business Entity Formation</h4>\n                        <p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">\n                            Limited Liability Company, Corporation or even Sole Proprietorship. What’s it going to be? Knowing the answer involves a careful analysis of your business concept and marketing ideas. This is where we come in.\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "features3-3a",
+          "_isUserblock": true,
+          "_sourceTheme": "commercem4",
+          "_cid": "rUlWsyhyFP",
           "_protectedParams": [],
           "_global": false,
           "_once": false,

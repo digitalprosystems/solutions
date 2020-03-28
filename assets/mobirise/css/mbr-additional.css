@@ -995,7 +995,7 @@ section.lazy-placeholder:after {
   }
 }
 .cid-rsJ1AnREnR {
-  padding-top: 15px;
+  padding-top: 30px;
   padding-bottom: 15px;
   background-color: #000000;
 }
@@ -1624,7 +1624,7 @@ section.lazy-placeholder:after {
   color: #232323;
 }
 .cid-rTIFz0OYzn {
-  padding-top: 15px;
+  padding-top: 30px;
   padding-bottom: 15px;
   background-color: #000000;
 }
@@ -2234,7 +2234,7 @@ section.lazy-placeholder:after {
   color: #ffe100;
 }
 .cid-rTIQoSqssv {
-  padding-top: 15px;
+  padding-top: 30px;
   padding-bottom: 15px;
   background-color: #000000;
 }
@@ -2844,7 +2844,7 @@ section.lazy-placeholder:after {
   color: #ffe100;
 }
 .cid-rTJa8XAOYT {
-  padding-top: 15px;
+  padding-top: 30px;
   padding-bottom: 15px;
   background-color: #000000;
 }
@@ -3454,7 +3454,7 @@ section.lazy-placeholder:after {
   color: #ffe100;
 }
 .cid-rTJhcNKqMh {
-  padding-top: 15px;
+  padding-top: 30px;
   padding-bottom: 15px;
   background-color: #000000;
 }
@@ -3971,7 +3971,7 @@ section.lazy-placeholder:after {
   background-color: #ffffff;
 }
 .cid-rTJDPk77YJ {
-  padding-top: 15px;
+  padding-top: 30px;
   padding-bottom: 15px;
   background-color: #000000;
 }
@@ -4661,7 +4661,7 @@ section.lazy-placeholder:after {
   color: #ffe100;
 }
 .cid-rTJZ67yq1H {
-  padding-top: 15px;
+  padding-top: 30px;
   padding-bottom: 15px;
   background-color: #000000;
 }
@@ -5206,7 +5206,7 @@ section.lazy-placeholder:after {
   color: #bca800;
 }
 .cid-rTOhsvwPAz {
-  padding-top: 15px;
+  padding-top: 30px;
   padding-bottom: 15px;
   background-color: #000000;
 }
@@ -6516,7 +6516,7 @@ section.lazy-placeholder:after {
   }
 }
 .cid-rUhVKIkCu6 {
-  padding-top: 15px;
+  padding-top: 30px;
   padding-bottom: 15px;
   background-color: #000000;
 }
@@ -7155,9 +7155,9 @@ section.lazy-placeholder:after {
   box-shadow: none !important;
 }
 .cid-rUx9ryG032 {
-  padding-top: 45px;
+  padding-top: 60px;
   padding-bottom: 0px;
-  background-color: #000000;
+  background-color: #ffffff;
 }
 @media (max-width: 768px) {
   .cid-rUx9ryG032 .mbr-text,
@@ -7178,44 +7178,53 @@ section.lazy-placeholder:after {
   text-align: center;
   color: #ffe100;
 }
-.cid-rUx9rzxrC1 {
-  padding-top: 0px;
-  padding-bottom: 15px;
-  background-color: #000000;
+.cid-rUy1w1okn4 {
+  padding-top: 15px;
+  padding-bottom: 45px;
+  background-color: #ffffff;
 }
-@media (min-width: 992px) {
-  .cid-rUx9rzxrC1 .mbr-figure {
-    padding-left: 2rem;
-  }
+.cid-rUy1w1okn4 .row-element,
+.cid-rUy1w1okn4 .image-element {
+  padding: 0;
 }
-@media (max-width: 992px) {
-  .cid-rUx9rzxrC1 .mbr-figure {
-    padding-top: 1rem;
-  }
+.cid-rUy1w1okn4 .image-element {
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
-.cid-rUx9rzxrC1 .mbr-text {
-  color: #ffffff;
-  text-align: left;
+.cid-rUy1w1okn4 .image-element img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
-.cid-rUx9rAxrpZ {
-  padding-top: 0px;
-  padding-bottom: 30px;
-  background-color: #000000;
-}
-.cid-rUx9rAxrpZ .mbr-section-subtitle {
-  color: #cccccc;
+.cid-rUy1w1okn4 .text-content {
+  padding: 3rem;
 }
 @media (max-width: 767px) {
-  .cid-rUx9rAxrpZ .mbr-section-btn,
-  .cid-rUx9rAxrpZ .mbr-section-subtitle,
-  .cid-rUx9rAxrpZ .mbr-section-title {
+  .cid-rUy1w1okn4 .text-content {
+    padding: 2rem 1rem;
+  }
+  .cid-rUy1w1okn4 .mbr-title,
+  .cid-rUy1w1okn4 .mbr-text,
+  .cid-rUy1w1okn4 .mbr-section-btn {
     text-align: center !important;
   }
+}
+.cid-rUy1w1okn4 .mbr-text,
+.cid-rUy1w1okn4 .mbr-section-btn {
+  color: #767676;
+}
+.cid-rUy1w1okn4 .mbr-title {
+  color: #bca800;
+}
+.cid-rUy1w1okn4 .mbr-section-subtitle {
+  color: #365c9a;
 }
 .cid-rUx9rBhSNn {
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #000000;
+  background-color: #ffffff;
 }
 @media (max-width: 768px) {
   .cid-rUx9rBhSNn .mbr-text,
@@ -7230,14 +7239,14 @@ section.lazy-placeholder:after {
 }
 .cid-rUx9rBhSNn .mbr-section-subtitle {
   text-align: center;
-  color: #3eccff;
+  color: #232323;
 }
 .cid-rUx9rBhSNn .mbr-section-title {
   text-align: center;
   color: #ffe100;
 }
 .cid-rUx9rC6Qt0 {
-  padding-top: 15px;
+  padding-top: 30px;
   padding-bottom: 15px;
   background-color: #000000;
 }
